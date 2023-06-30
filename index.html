@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>FaceLock Simulation</title>
+</head>
+<body>
+
+   <div class="Sides"></div>
+   <div id="container">
+    <div class="welcome flexProperty">Welcome to Face-Lock Simulation</div>
+    <div class="Sign">
+    <div class="signup">
+      <form action="" class="signupForm">
+
+         <div><span style="font-size:x-large; font-weight:bold;">Signup!</span></div><br>
+
+         <input type="text" name="name" id="name" placeholder="*Full Name" required><br><br>
+         <input type="text" name="user" id="user" placeholder="*Username" required><br><br> 
+         <input type="email" name="email" id="email" placeholder="*email" required><br><br> 
+         <input type="password" name="pass" id="password" placeholder="*Password" required><br><br> 
+         <input type="password" name="confirmPass" id="confirm-password" placeholder="*Confirm Password" required><br><br>
+         <label for="pic">*Your Photo</label>
+         <input type="file" name="pic" id="pic" required><br><br> 
+         <button class="btn-dark" style="width: 80%;">SignUp</button>
+      </form>
+    </div>
+    
+    <div class="container text-center bordered" style="width:280px">
+        <form action="" class="loginForm">
+         <div><span style="font-size:x-large; font-weight:bold;">Login!</span></div><br>
+            <video width=250px height=250px id="video" controls autoplay></video>
+            <br>
+            <input type="email" placeholder="Email" name="email" class="form-control form-control-sm text-left">
+            <br>
+            <input type="text" accept="image/png" hidden name="current_image" id="current_image">
+           <button class="btn-dark" value="login" style="width: 100%;">Login</button>
+           <br>
+           <br>
+        </form>
+        </div>
+        </div>
+    </div>
+
+    <div class="Sides"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
